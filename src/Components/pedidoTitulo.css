@@ -1,0 +1,14 @@
+.pedido-titulo {
+    border: 2px solid #F0C9CD;
+    border-radius: 12px;
+    width: 90vw;
+    height: 70px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 40px;
+    color: #D9B1AB;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    margin: 16px 0;
+}

@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 70px;
+    background-color: #D9B1AB;
+    padding: 0 12px;
+}
+
+.header-home-button, .espaco-vazio-header {
+    border: none;
+    background-color: transparent;
+    width: 41px;
+}
+
+.header-home-button img {
+    width: 100%;
+}
+
+.header-title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 40px;
+    color: #FFFFFF;
+}
