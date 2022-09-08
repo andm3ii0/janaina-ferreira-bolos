@@ -55,7 +55,7 @@ function PedidoTamanho() {
       <PedidoTitulo
         page="Tamanho"
         tamanho={ setTamanho }
-        description={ tamanho.tamanhoC[tamanhoC][1] }
+        description={ parseInt(tamanhoC, 10) > 4 ? 'G' : tamanho.tamanhoC[tamanhoC][1] }
       />
       <p className="pedido-tamanho-help">
         Aqui você pode escolher pelo tamanho, a quantidade de convidados ou pelo
@@ -109,10 +109,12 @@ function PedidoTamanho() {
             className="input"
             value={ tamanhoC }
             id="peso"
+            min="1"
             name="peso"
             type="number"
             onChange={ ({ target }) => {
-              if (target.value > 4) {
+              if (parseInt(target.value, 10) > 4) {
+                console.log('oi');
                 setTamanhoA(tamanho.tamanhoC[4][1]);
                 setTamanhoB(tamanho.tamanhoC[4][0]);
                 setTamanhoC(target.value);
