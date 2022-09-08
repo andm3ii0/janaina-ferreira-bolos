@@ -1,9 +1,11 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import './header.css';
+import { useHistory } from 'react-router-dom';
 import Home from '../Images/Home.svg';
 
-function Header({ history }) {
+function Header() {
+  const history = useHistory();
   const homeButtonClick = () => {
     history.push('/');
   };
