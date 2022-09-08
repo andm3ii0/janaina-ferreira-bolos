@@ -1,0 +1,28 @@
+.aviso {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba(217, 217, 217, 0.5);
+    backdrop-filter: blur(6px);
+    border-radius: 0px 0px 40px 40px;
+}
+
+.aviso-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    background: rgba(217, 177, 171, 0.7);
+    box-shadow: 4px 4px 25px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding: 12px 20px;
+}

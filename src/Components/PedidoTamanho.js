@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import ButtonContinue from './ButtonContinue';
 import PedidoTitulo from './PedidoTitulo';
 import './pedidoTamanho.css';
+import Aviso from './Aviso';
 
 function PedidoTamanho() {
   const [tamanho, setTamanho] = useState({
@@ -34,6 +35,7 @@ function PedidoTamanho() {
   const [tamanhoA, setTamanhoA] = useState('PP');
   const [tamanhoB, setTamanhoB] = useState('8');
   const [tamanhoC, setTamanhoC] = useState('1');
+  const [acept, setAcept] = useState(true);
 
   const tamanhos = (num) => {
     if (num <= 8) {
@@ -128,6 +130,7 @@ function PedidoTamanho() {
         </label>
       </div>
       <ButtonContinue />
+      { acept && <Aviso acept={ acept } setAcept={ setAcept } /> }
     </div>
   );
 }
