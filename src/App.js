@@ -1,9 +1,9 @@
 import React from 'react';
 import Provider from './Context/Provider';
-import Routes from './Routes/Routes';
+import PageRoutes from './Routes/Routes';
 
 function App() {
-  return <Routes />;
+  return <PageRoutes />;
 }
 
 export default App;

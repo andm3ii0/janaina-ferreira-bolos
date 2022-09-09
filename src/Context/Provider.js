@@ -10,6 +10,7 @@ export default function Provider({ children }) {
   const context = {
     typePage,
     setTypePage,
+    copy,
   };
 
   return <Context.Provider value={ context }>{children}</Context.Provider>;
