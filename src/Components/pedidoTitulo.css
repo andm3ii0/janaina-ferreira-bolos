@@ -2,13 +2,13 @@
     border: 2px solid #F0C9CD;
     border-radius: 12px;
     width: 90vw;
-    height: 70px;
+    min-height: 70px;
     font-family: 'Montserrat';
     font-weight: 400;
-    font-size: 40px;
+    font-size: 36px;
     color: #D9B1AB;
     display: flex;
     align-items: center;
-    padding-left: 16px;
+    padding: 8px 4px;
     margin: 16px 0;
 }

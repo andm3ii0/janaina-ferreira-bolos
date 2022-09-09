@@ -1,0 +1,83 @@
+.pedido-page-sabor {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.pedido-sabor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+}
+
+.pedido-sabor-help {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 22px;
+    color: #969494;
+    width: 90vw;
+    margin-bottom: 12px;
+}
+
+.inputs-sabor {
+    width: 90vw;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    margin-bottom: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px 0;
+}
+
+.inputs-sabor label, .label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 4px;
+    width: 90%;
+    margin: 12px;
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    font-size: 24px;
+    color: #969494;
+}
+
+.inputs-sabor input,
+.inputs-sabor select {
+    width: 100%;
+    height: 36px;
+    border: none;
+    background: #F0F0F0;
+    border-radius: 8px;
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    font-size: 24px;
+    color: #969494;
+    padding-left: 12px;
+}
+
+.label > .input {
+    width: 100%;
+    height: 150px;
+    border: none;
+    background: #F0F0F0;
+    border-radius: 8px;
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    font-size: 24px;
+    color: #969494;
+    padding: 12px 8px;
+}
+
+.description {
+    font-family: 'Rajdhani';
+    font-weight: 400;
+    font-size: 18px;
+    color: #85827E;
+}

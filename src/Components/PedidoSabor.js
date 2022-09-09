@@ -1,21 +1,26 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import PedidoTitulo from './PedidoTitulo';
 import sabores from '../data';
 import ButtonContinue from './ButtonContinue';
+import Context from '../Context/Context';
+import './pedidoSabor.css';
 
 function PedidoSabor() {
   const [sabor, setSabor] = useState('Chocolatudo');
+  const { setTypePage } = useContext(Context);
 
   return (
-    <div>
+    <div className="pedido-sabor">
       <PedidoTitulo page="Sabor" description={ sabor } />
-      <p className="pedido-tamanho-help">
+      <p className="pedido-sabor-help">
         Aqui você escolhe o sabor da sua massa, e pode ver uma breve descrição,
         como por exemplo sabor da massa e recheio
       </p>
-      <div>
-        <label htmlFor="sabores">
+      <div className="inputs-sabor">
+        <label htmlFor="sabores"
+        className="sabor-input">
           <select
+            className="input"
             id="sabores"
             value={ sabor }
             onChange={ ({ target }) => setSabor(target.value) }
@@ -25,9 +30,12 @@ function PedidoSabor() {
                 <option key={ saborItem } value={ saborItem }>{saborItem}</option>))}
           </select>
         </label>
-        <p>{sabores[sabor]}</p>
+        <div className="label">
+          <p className="input">{sabores[sabor]}</p>
+        </div>
+        
       </div>
-      <ButtonContinue />
+      <ButtonContinue continueButtonClick={ () => setTypePage('Finalizacso') }/>
     </div>
   );
 }
