@@ -18,7 +18,8 @@ function PedidoSabor() {
       </p>
       <div className="inputs-sabor">
         <label htmlFor="sabores"
-        className="sabor-input">
+          className="sabor-input">
+          Sabor:
           <select
             className="input"
             id="sabores"
@@ -31,6 +32,7 @@ function PedidoSabor() {
           </select>
         </label>
         <div className="label">
+          Descrição:
           <p className="input">{sabores[sabor]}</p>
         </div>
         
