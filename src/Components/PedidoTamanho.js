@@ -1,9 +1,10 @@
 /* eslint-disable no-magic-numbers */
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import ButtonContinue from './ButtonContinue';
 import PedidoTitulo from './PedidoTitulo';
 import './pedidoTamanho.css';
 import Aviso from './Aviso';
+import Context from '../Context/Context';
 
 function PedidoTamanho() {
   const [tamanho, setTamanho] = useState({
@@ -36,6 +37,7 @@ function PedidoTamanho() {
   const [tamanhoB, setTamanhoB] = useState('8');
   const [tamanhoC, setTamanhoC] = useState('1');
   const [acept, setAcept] = useState(true);
+  const { typePage, setTypePage } = useContext(Context);
 
   const tamanhos = (num) => {
     if (num <= 8) {
@@ -55,7 +57,7 @@ function PedidoTamanho() {
   return (
     <div className="pedido-tamanho">
       <PedidoTitulo
-        page="Tamanho"
+        page={ typePage }
         tamanho={ setTamanho }
         description={ parseInt(tamanhoC, 10) > 4 ? 'G' : tamanho.tamanhoC[tamanhoC][1] }
       />
@@ -129,7 +131,7 @@ function PedidoTamanho() {
           />
         </label>
       </div>
-      <ButtonContinue />
+      <ButtonContinue continueButtonClick={ () => setTypePage('Sabor') } />
       { acept && <Aviso acept={ acept } setAcept={ setAcept } /> }
     </div>
   );
