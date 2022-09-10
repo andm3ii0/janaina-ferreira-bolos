@@ -1,0 +1,24 @@
+.manager {
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.manager>button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    height: 70px;
+    background-color: #F0C9CD;
+    border-radius: 12px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 22px;
+    color: #FFFFFF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+

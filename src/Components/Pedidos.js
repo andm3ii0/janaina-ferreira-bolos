@@ -1,15 +1,16 @@
 import React from "react";
 import Context from "../Context/Context";
 import Header from "./Header";
+import './pedidos.css';
 
 function Pedidos() {
   return (
     <Context.Consumer>
       {({pedidosList}) => {
         return (
-          <div>
+          <div className="pedidos">
             <Header type="Pedidos" />
-            <div>{pedidosList.map((pedido) => <div key={pedido.codigo}>
+            <div className="pedidos-card">{pedidosList.map((pedido) => <div className="pedido-card" key={pedido.codigo}>
               <p>Código {pedido.codigo}</p>
               <p>Nome: {pedido.nome}</p>
               <p>Tamanho: {pedido.tamanho}</p>

@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 90vw;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    padding: 24px 0;
+}
+
+.finalizar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+form>label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    width: 90%;
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    font-size: 24px;
+    color: #969494;
+}
+
+form>label>input,
+label>div>input {
+    width: 96%;
+    border: none;
+    background: #F0F0F0;
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 16px;
+    color: #969494;
+    margin-right: 12px;
+}
+
+.input-codigo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+form > button {
+
+}
+
+
+
+.input-codigo>button, form > button {
+    background: #D9B1AB;
+    box-shadow: 4px 4px 25px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    min-height: 34px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+form > button {
+    margin-top: 24px;
+}
