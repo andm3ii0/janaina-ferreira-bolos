@@ -38,4 +38,24 @@ export const codigoObj = {
   },
 };
 
+export const itensByCode = {
+  tamanho: {
+    "01": "PP",
+    "02": "P",
+    "03": "M",
+    "04": "G",
+  },
+  sabor: {
+    "01": "Chocolatudo",
+    "02": "Bem casado",
+    "03": "Red velvet com Ninho",
+    "04": "Tradicional Red Velvet",
+    "05": "Doce de leite com crocante",
+    "06": "Ninho com morango",
+    "07": "Ninho com Nutella",
+    "08": "Três amores",
+    "09": "Branquinho",
+  },
+};
+
 export default sabores;
