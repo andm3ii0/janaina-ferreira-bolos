@@ -7,7 +7,7 @@ import './pedidoSabor.css';
 
 function PedidoSabor() {
   const [sabor, setSabor] = useState('Chocolatudo');
-  const { setTypePage } = useContext(Context);
+  const { setTypePage, setCodigo, codigo } = useContext(Context);
 
   return (
     <div className="pedido-sabor">
@@ -37,7 +37,10 @@ function PedidoSabor() {
         </div>
         
       </div>
-      <ButtonContinue continueButtonClick={ () => setTypePage('Finalizacso') }/>
+      <ButtonContinue continueButtonClick={() => {
+        setCodigo({...codigo, sabor})
+        setTypePage('Codigo')
+      }} />
     </div>
   );
 }

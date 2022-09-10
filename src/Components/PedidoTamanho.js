@@ -37,7 +37,7 @@ function PedidoTamanho() {
   const [tamanhoB, setTamanhoB] = useState("8");
   const [tamanhoC, setTamanhoC] = useState("1");
   const [acept, setAcept] = useState(true);
-  const { typePage, setTypePage } = useContext(Context);
+  const { typePage, setTypePage, setCodigo, codigo } = useContext(Context);
 
   const tamanhos = (num) => {
     if (num <= 8) {
@@ -134,7 +134,10 @@ function PedidoTamanho() {
           />
         </label>
       </div>
-      <ButtonContinue continueButtonClick={() => setTypePage("Sabor")} />
+      <ButtonContinue continueButtonClick={() => {
+        setCodigo({...codigo, tamanho: tamanhoA})
+        setTypePage("Sabor")
+      }} />
       {acept && <Aviso acept={acept} setAcept={setAcept} />}
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../Components/Header";
+import PedidoCodigo from "../Components/PedidoCodigo";
 import PedidoSabor from "../Components/PedidoSabor";
 import PedidoTamanho from "../Components/PedidoTamanho";
 import Context from "../Context/Context";
@@ -13,6 +14,7 @@ function Pedido() {
           <div>
             {value.typePage === "Sabor" && <PedidoSabor />}
             {value.typePage === "Tamanho" && <PedidoTamanho />}
+            {value.typePage === "Codigo" && <PedidoCodigo />}
           </div>
         )}
       </Context.Consumer>

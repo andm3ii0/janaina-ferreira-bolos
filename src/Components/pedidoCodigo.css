@@ -1,0 +1,45 @@
+.pedido-codigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 40px;
+    color: #969494;
+}
+
+.codigo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90vw;
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
+.codigo {
+    background: #FFFFFF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    width: 100%;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.codigo img, .img {
+    width: 35px;
+}
+
+.pedido-codigo-help {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 22px;
+    color: #969494;
+    width: 90vw;
+    margin-bottom: 12px;
+}
