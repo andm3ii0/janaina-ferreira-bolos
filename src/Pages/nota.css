@@ -1,0 +1,221 @@
+ .pedido {
+     display: flex;
+     justify-content: center;
+ }
+
+ /* .print {
+     width: 595px;
+     height: 842px;
+ } */
+
+ .to-print {
+     background-color: white;
+     width: 595px;
+     height: 842px;
+ }
+
+ .pedido form {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     flex-wrap: nowrap;
+     align-content: space-around;
+     align-items: center;
+     font-family: 'Rajdhani', sans-serif;
+     font-weight: 600;
+     font-size: 16px;
+     color: #535353;
+     width: 595px;
+     height: 842px;
+ }
+
+ .nota {
+     width: 95%;
+     border: 1px solid #F0F0F0;
+     border-radius: 9px;
+     padding: 4px 24px 12px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+ }
+
+ .titulo p {
+     font-weight: 600;
+     font-size: 18px;
+     margin: 4px 0;
+ }
+
+ .clinet-inputs,
+ .pedido-inputs,
+ .outro-inputs {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .inputs label {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .section {
+     width: 100%;
+ }
+
+ .horario {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+ }
+
+ .horario-inputs,
+ .tamanho-sabor,
+ .tamanho-sabor-inputs,
+ .categoria {
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     justify-content: space-between;
+ }
+
+ .tamanho-sabor1,
+ .categoria .topo,
+ .categoria .tema,
+ .categoria .nome1,
+ .categoria .idade {
+     margin-top: 8px;
+     width: 48%;
+ }
+
+ .tamanho-sabor-inputs {
+     flex-direction: column;
+     width: 100%;
+ }
+
+ .horario-inputs .data,
+ .horario-inputs .hora {
+     width: 45%;
+ }
+
+ .tamanho-sabor-inputs .tamanho,
+ .tamanho-sabor-inputs .sabor {
+     width: 100%;
+ }
+
+ .outro-input {
+     height: 50px;
+ }
+
+ .nota input,
+ .nota select,
+ .nota textarea {
+     height: 28px;
+     border: none;
+     background: #F0F0F0;
+     border-radius: 8px;
+     font-family: 'Roboto', sans-serif;
+     font-weight: 400;
+     font-size: 18px;
+     color: #000000;
+     padding-left: 12px;
+ }
+
+ .nota textarea {
+     height: 50px;
+ }
+
+ .destaque {
+     border: 1px solid #F0F0F0;
+     border-radius: 9px;
+     padding: 8px 12px;
+ }
+
+ /*.pedido form {
+    padding: 48px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+}
+
+.nota {
+    width: 90vw;
+    background: #FFFFFF;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px 0;
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    font-size: 24px;
+    color: #535353;
+}
+
+.nota label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 4px;
+    width: 90%;
+    margin: 12px;
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    font-size: 24px;
+    color: #969494;
+}
+
+.nota input,
+.nota select {
+    width: 100%;
+    height: 36px;
+    border: none;
+    background: #F0F0F0;
+    border-radius: 8px;
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    font-size: 24px;
+    color: #969494;
+    padding-left: 12px;
+}
+
+.horario {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.horario p {
+    width: 100%;
+}
+
+.horario label {
+    width: 40%;
+}
+
+.tamanho-sabor {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.categoria {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+} */

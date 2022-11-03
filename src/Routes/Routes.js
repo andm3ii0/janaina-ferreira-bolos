@@ -5,12 +5,14 @@ import Provider from '../Context/Provider';
 import Pedido from '../Pages/Pedido';
 import FinalizarPedido from '../Components/FinalizarPedido';
 import Pedidos from '../Components/Pedidos';
+import Nota from '../Pages/Nota';
 
 
 function Routes() {
   return (
     <Provider>
       <Switch>
+        <Route exact path="/gerar-nota-pedido" render={Nota} />
         <Route exact path="/pedido" render={ Pedido } />
         <Route exact path="/pedido-server" render={HomeServer} />
         <Route exact path="/pedido-server/finalizar" render={FinalizarPedido} />

@@ -5,6 +5,7 @@ import { useHistory } from 'react-router-dom';
 import Home from '../Images/Home.svg';
 
 function Header({type}) {
+  console.log(type);
   const history = useHistory();
   const homeButtonClick = () => {
     history.push('/');
